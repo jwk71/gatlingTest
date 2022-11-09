@@ -11,8 +11,8 @@ class VideoGameFullTest extends Simulation {
 
   // ** VARIABLES FOR FEEDERS ** /
   // runtime variables
-  def USERCOUNT = System.getProperty("USERS", "5").toInt
-  def RAMPDURATION = System.getProperty("RAMP_DURATION", "10").toInt
+  def USERCOUNT: Int = System.getProperty("USERS", "5").toInt
+  def RAMPDURATION: Int = System.getProperty("RAMP_DURATION", "10").toInt
   def TESTDURATION: Int = System.getProperty("TEST_DURATION", "30").toInt
 
   val csvFeeder = csv("data/gameCsvFile.csv").random
